@@ -1,5 +1,5 @@
 public class Longestsubaaray {
-    public int findsubarray(int[]arr) {
+    public int findsubarray(int[]arr,int w) {
         int n = arr.length;
         int len = 0;
         for (int i = 0; i < n; i++) {
@@ -18,8 +18,9 @@ public class Longestsubaaray {
     }
     public static void main(String[]args){
       int []arr ={10,5,2,7,1,9};
+      int w=15;
       Longestsubaaray obj = new Longestsubaaray();
-      int ans = obj.findsubarray(arr);
+      int ans = obj.findsubarray(arr,w);
         System.out.println(ans);
     }
 }
